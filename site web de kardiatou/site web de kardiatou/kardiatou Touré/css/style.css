@@ -1,0 +1,402 @@
+@font-face {
+    font-family: font;
+    src: url("../fonts/font.eot") format('embedded-type'),
+         url("../fonts/font.eot#?iefix") format('embedded-type'),
+         url("../fonts/font.otf") format('open-type'),
+         url("../fonts/font.ttf") format('true-type'),
+         url("../fonts/font.woff") format('woff'),
+         url("../fonts/font.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: font,sans-serif;
+    scroll-behavior: smooth;
+}
+/* beginning of the home page style*/
+nav{
+    width:70%;
+    height: 50px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+#nav-ul img{
+    height: 50px;
+}
+#nav-ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#a52;
+}
+nav li:hover{
+    height: 30px;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/lead-bg.jpg") no-repeat ;
+    background-size: cover;
+}
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 184, 135, 0.8);
+    z-index: 2;
+}
+ #header-content{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     z-index: 5;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 60px 1fr 50px;
+     justify-items: center;
+ }
+
+ #name-fonction{
+     width: 100%;
+     height: 100%;
+     color:white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     
+ }
+ #name-fonction h1{
+     font-size: calc(1.75em + 2vw);
+ }
+ #name-fonction h2{
+     font-size: calc(0.75em + 2vw);
+     color: #f5f5dc;
+ }
+ #name-fonction a{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     width: 250px;
+     height: 45px;
+     border: 3px solid white;
+     text-decoration: none;
+     color:white;
+     font-size: 1.5em;
+     margin-top: 0.1em;
+     border-radius: 30px;
+ }
+ #name-fonction a:hover{
+     color: #f5f5dc;
+     background-color: white;
+ }
+ nav label , #checkbox{
+     display:none;
+ }
+ h2 div{
+     height: 1px;
+     width: 50%;
+     margin: 0 25%;
+     background-color: rgb(222, 184, 135);
+ }
+ h4 div{
+    height: 1px;
+    width: 50%;
+    margin: 0 25%;
+    background-color: rgb(222, 184, 135);
+}
+ /* Style of the Formation section*/
+ #formation-section{
+     height:-webkit-max-content;
+     height:-moz-max-content;
+     height:max-content;
+     text-align: center;
+     padding: 20px 0 20px 0;
+     border-bottom:  1px solid #dcd9d9;
+ }
+ #formation-section h2{
+     width: -webkit-max-content;
+     width: -moz-max-content;
+     width: max-content;
+     margin: auto;
+     margin-bottom: 50px;
+ }
+ #formation-div h3{
+    border-right: 2px solid #f5f5dc;
+    width: 100%;
+    height: 90%;
+    text-align: start;
+}
+#formation-div h3:nth-child(3){
+    border-right: 2px solid #f5f5dc;
+}
+ #formation-div{
+     display: grid;
+     width: 70%;
+     margin: auto;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: repeat(3 , 133px);
+     justify-items: start;
+     row-gap: 20px;
+ }
+ #formation-div p{
+     background-color: white;
+     border: solid 1px #e6e6e6;
+     width: 95%;
+     height: 90%;
+     justify-self: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ /* style for the comptence section*/
+ #competence-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px 0 20px 0;
+     border-bottom: solid 1px #000000;
+ }
+ #competence-section h2{
+    margin-bottom: 50px;
+ }
+ #competence-div{
+     width: 100%;
+ }
+ #competence-div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto 30px auto ;
+    border-radius: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0,0.8);
+    background-color: #654321;
+    overflow: hidden;
+ }
+ div ul{
+    list-style: url("../images/checkIcon.png") inside;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    align-self: start;
+ }
+ #reseau,#telecom,#info{
+     display: grid;
+     width: 100%;
+     height: 250px;
+     grid-template-columns: 1fr;
+     grid-template-rows: 50px 1fr;
+     justify-items: center;
+     align-items: center;
+
+     
+ }
+ /* lang section style*/
+ #lang-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #f2f2f5;
+     gap: 30px;
+     padding: 20px 0 20px 0;
+ }
+.lang{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #f5f5dc;
+    justify-items: center;
+    align-items: center;
+}
+.lang p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5dc;
+}
+.lang p:first-child{
+    background-color:#f5f5dc ;
+}
+ /* footer style */
+ .chevron{
+     width: 32px;
+     height: 32px;
+     border: solid 3px #f5f5dc;
+     border-radius: 50%;
+     padding: 5px;
+ }
+ .comp{
+     border: 3px solid #f5f5dc ;
+     border-radius: 50%;
+ }
+ footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px 0 20px 0;
+}
+#div-contact{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#div-contact h2 {
+    text-align: center;
+}
+#div-contact > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+}
+#footer-paragraph1,#footer-paragraph2,#footer-paragraph3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+ /* Media queries for the responsive of the website*/
+ @media  screen and (max-width:760px) {
+     /* responsive nav bar*/
+    nav{
+        position: relative;
+        width: 100%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        background: transparent;
+    }
+    #nav-ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 5px 10px 5px;
+        display: none;
+    }
+    #nav-ul a{
+        color: rgb(222, 184, 135);
+    }
+    #school-logo{
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        margin: auto;
+    }
+    #nav-ul img{
+        height: 100px;
+    }
+    #nav-ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 10px 0;
+        height: 25px;
+        padding: 10px;
+        
+    }
+    #nav-ul li:hover{
+        height: 25px;
+    }
+    nav label{
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 28px;
+        text-shadow: 3px 4px 4px rgba(0, 0, 0,0.5);
+    }
+    #checkbox{
+        display: none;
+        width: 30px;
+        height: 35px;
+    }
+    nav input:checked ~ #nav-ul{
+        display: block;
+        background-color:rgba(222, 184, 135, 1);
+    }
+    nav input:checked ~ label{
+        color: rgb(222, 184, 135);
+    }
+    /*responsive nav bar end*/
+    /*Competence section responsive*/
+    #competence-div > div img{
+        display: none;
+    }
+    #competence-div > div{
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+    }
+    /*Competence section responsive*/
+ }
+ @media  screen  and (max-width:819px){
+     /*responsive for formations section*/
+     #formation-div{
+         grid-template-columns: 1fr;
+         grid-template-rows: 50px 133px 50px 133px 50px 133px;
+         justify-items: center;
+        }
+    #formation-div h3{
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        }
+    #formation-div h3 ,#formation-div h3:nth-child(3){
+        border-right: none;
+    }
+
+     /*end formations section responsive*/
+     /*footer responsive*/
+     #div-contact > div{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(3,100px);
+    }
+
+     /*footer responsive end*/
+ }
+
+.who-am-i:before {
+    content: url("../images/suis-je.png");
+    margin-right: 0.5rem;
+}
+.education:before {
+    content: url("../images/logoformation.png");
+    margin-right: 0.5rem;
+}
+.interests:before {
+    content: url("../images/logo-centres-interet.png");
+    margin-right: 0.5rem;
+}
